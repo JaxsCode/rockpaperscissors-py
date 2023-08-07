@@ -6,6 +6,7 @@ items = ['ROCK','PAPER','SCISSORS'] #Items for computer to choose
 computer_choice = random.choice(items) # Variable for computer to choose
 
 def logic(computer_choice):
+        # Prompt the player to enter their choice
     while True:
         player_choice = input("ENTER YOUR CHOICE [ROCK,PAPERS,SCISSORS]: ")
         player_choice = player_choice.upper()
@@ -13,6 +14,9 @@ def logic(computer_choice):
             print("CHOOSE VALID ITEM!")
         else:
             break
+
+    
+    # Print the computer's choice
     print(computer_choice)
 
     #CONDITIONS FOR DECIDING THE WINNER OF THE GAME
